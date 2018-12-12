@@ -27,12 +27,11 @@ bash ./run.sh
 ```
 singularity apps cowsay.simg                                     
 cowsay
-
 ```
 
 ## Get help!
 ```
-singularity help --app cowsay cowsay.simg 
+singularity help --app cowsay cowsay.simg
     For more information visit https://en.wikipedia.org/wiki/Cowsay
 ```
 
@@ -49,3 +48,8 @@ singularity run --app cowsay cowsay.simg "Bacon pancaaaaaaaaakes"
                 ||----w |
                 ||     ||
 ```
+
+---
+[![CBD](http://www.cbd.cmu.edu/wp-content/uploads/2017/07/wordpress-default.png)](http://www.cbd.cmu.edu)
+
+Copyleft © 2018 [icaoberg](http://www.andrew.cmu.edu/~icaoberg) at the [Computational Biology Department](http://www.cbd.cmu.edu) in [Carnegie Mellon University](http://www.cmu.edu)
