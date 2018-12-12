@@ -17,3 +17,35 @@
 ```
 
 A simple container with [cowsay](https://en.wikipedia.org/wiki/Cowsay).
+
+## Building the container
+```
+bash ./run.sh
+```
+
+## List app(s)
+```
+singularity apps cowsay.simg                                     
+cowsay
+
+```
+
+## Get help!
+```
+singularity help --app cowsay cowsay.simg 
+    For more information visit https://en.wikipedia.org/wiki/Cowsay
+```
+
+## Running the app
+
+```
+singularity run --app cowsay cowsay.simg "Bacon pancaaaaaaaaakes"
+ ________________________
+< Bacon pancaaaaaaaaakes >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
