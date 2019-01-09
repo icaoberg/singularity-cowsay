@@ -53,7 +53,7 @@ singularity run --app figlet figlet.simg "Bacon pancakes"
 
 ## Download
 
-To download the image, click [here](https://drive.google.com/open?id=1P8qLoJmZvcQANjIRM2B8hQXqLyriS4tl)
+To download the image, click [here](https://drive.google.com/open?id=1P8qLoJmZvcQANjIRM2B8hQXqLyriS4tl).
 
 ---
 [![CBD](http://www.cbd.cmu.edu/wp-content/uploads/2017/07/wordpress-default.png)](http://www.cbd.cmu.edu)
