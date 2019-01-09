@@ -21,15 +21,15 @@ IncludeCmd: yes
     if [ ! -d /share ]; then mkdir /share; fi
     if [ ! -d /scratch ]; then mkdir /scratch; fi
 
-%appinstall cowsay
-    apt-get -y install cowsay
+%appinstall figlet
+    apt-get -y install figlet
 
-%appenv cowsay
-    BEST_APP=cowsay
+%appenv figlet
+    BEST_APP=figlet
     export BEST_APP
 
-%apphelp cowsay
-    For more information visit https://en.wikipedia.org/wiki/Cowsay
+%apphelp figlet
+    For more information visit http://www.figlet.org/
 
-%apprun cowsay
-cowsay "$@"
+%apprun figlet
+figlet "$@"
