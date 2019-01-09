@@ -49,7 +49,11 @@ singularity run --app cowsay cowsay.simg "Bacon pancaaaaaaaaakes"
                 ||     ||
 ```
 
+## Download
+
+To download the image, click [here](https://drive.google.com/open?id=1P8qLoJmZvcQANjIRM2B8hQXqLyriS4tl)
+
 ---
 [![CBD](http://www.cbd.cmu.edu/wp-content/uploads/2017/07/wordpress-default.png)](http://www.cbd.cmu.edu)
 
-Copyleft © 2018 [icaoberg](http://www.andrew.cmu.edu/~icaoberg) at the [Computational Biology Department](http://www.cbd.cmu.edu) in [Carnegie Mellon University](http://www.cmu.edu)
+Copyleft © 2018-2019 [icaoberg](http://www.andrew.cmu.edu/~icaoberg) at the [Computational Biology Department](http://www.cbd.cmu.edu) in [Carnegie Mellon University](http://www.cmu.edu)
