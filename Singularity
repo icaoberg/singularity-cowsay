@@ -14,9 +14,8 @@ IncludeCmd: yes
     /usr/bin/apt-get update && /usr/bin/apt-get -y upgrade
     /usr/bin/apt-get install -y build-essential
 
-    # Make folders for CBD HPC cluster
     if [ ! -d /images ]; then mkdir /images; fi
-    if [ ! -d /projects ]; then mkdir /containers; fi
+    if [ ! -d /projects ]; then mkdir /projects; fi
     if [ ! -d /containers ]; then mkdir /containers; fi
     if [ ! -d /share ]; then mkdir /share; fi
     if [ ! -d /scratch ]; then mkdir /scratch; fi
@@ -25,8 +24,8 @@ IncludeCmd: yes
     apt-get -y install cowsay
 
 %appenv cowsay
-    BEST_APP=cowsay
-    export BEST_APP
+    APP=cowsay
+    export APP
 
 %apphelp cowsay
     For more information visit https://en.wikipedia.org/wiki/Cowsay
