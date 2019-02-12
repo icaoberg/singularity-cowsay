@@ -25,4 +25,4 @@ IncludeCmd: yes
     For more information visit https://en.wikipedia.org/wiki/Cowsay
 
 %apprun cowsay
-cowsay "$@"
+    cowsay "$@"
