@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE=cowsay.simg
+IMAGE=singularity-cowsay.simg
 DEFINITION=Singularity
 
 if [ -f $IMAGE ]; then
