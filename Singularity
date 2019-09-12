@@ -3,6 +3,11 @@ From: ubuntu:16.04
 
 IncludeCmd: yes
 
+%labels
+    AUTHOR icaoberg
+    EMAIL icaoberg@alumni.cmu.edu
+    WEBSITE http://linus.cbd.cs.cmu.edu
+    
 %runscript
     exec /bin/bash "$@"
 
@@ -12,14 +17,15 @@ IncludeCmd: yes
 
 %post
     /usr/bin/apt-get update
-
-    # Make folders for CBD HPC cluster
+    
     if [ ! -d /images ]; then mkdir /images; fi
     if [ ! -d /projects ]; then mkdir /projects; fi
     if [ ! -d /containers ]; then mkdir /containers; fi
     if [ ! -d /share ]; then mkdir /share; fi
     if [ ! -d /scratch ]; then mkdir /scratch; fi
+    if [ ! -d /webservers/pfenningweb ]; then mkdir -p /webservers/pfenningweb; fi
 
+####################################################################################
 %appinstall cowsay
     /usr/bin/apt-get -y install cowsay
 
