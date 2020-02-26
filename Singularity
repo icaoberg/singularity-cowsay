@@ -1,40 +1,26 @@
 Bootstrap: docker
-From: ubuntu:16.04
-
-IncludeCmd: yes
+From: debian:latest
 
 %labels
     AUTHOR icaoberg
     EMAIL icaoberg@alumni.cmu.edu
     WEBSITE http://linus.cbd.cs.cmu.edu
     
-%runscript
-    exec /bin/bash "$@"
-
 %environment
     export LC_ALL=C
     export PATH=/usr/games:$PATH
 
 %post
-    /usr/bin/apt-get update
+    apt-get update
     
-    if [ ! -d /images ]; then mkdir /images; fi
-    if [ ! -d /projects ]; then mkdir /projects; fi
-    if [ ! -d /containers ]; then mkdir /containers; fi
-    if [ ! -d /share ]; then mkdir /share; fi
-    if [ ! -d /scratch ]; then mkdir /scratch; fi
-    if [ ! -d /webservers/pfenningweb ]; then mkdir -p /webservers/pfenningweb; fi
-
 ####################################################################################
 %appinstall cowsay
-    /usr/bin/apt-get -y install cowsay
-
-%appenv cowsay
-    APP=cowsay
-    export APP
+    apt-get -y install cowsay
 
 %apphelp cowsay
-    For more information visit https://en.wikipedia.org/wiki/Cowsay
+    For more information visit 
+
+    * https://en.wikipedia.org/wiki/Cowsay
 
 %apprun cowsay
     cowsay "$@"
